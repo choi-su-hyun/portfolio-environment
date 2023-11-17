@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta property="og:title" content="GREEN" />
+    <meta
+      property="og:description"
+      content="세계가 직면한 기후위기, GREEN이 지구와 우리, 모두 활짝 웃는 미래를 만들어갑니다."
+    />
+    <meta
+      property="og:image"
+      content="{{ url_for('static', filename='og-image.png') }}"
+    />
+    <title>GREEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="./public-css.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <!-- 
+  ---------------------
+  헤더
+-->
+
+    <header>
+      <div class="default-header">
+        <div class="container">
+          <div>
+            <a class="header__logo-wrap" href="/index.html">
+              <img
+                class="header__logo--white"
+                src="/images/green-logo--white.png"
+                alt=""
+              />
+              <img
+                class="header__logo--black"
+                src="/images/green-logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- <nav>
+            <ul class="menu">
+              <li>
+              </li>
+            </ul>
+            <div class="mobile-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- 
+  ---------------------
+  히어로 섹션 
+-->
+    <section id="section-hero">
+      <div class="video-wrap">
+        <video
+          class="background-video__background"
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+          volume="0 "
+        >
+          <source src="/images/hero__video.mp4" />
+        </video>
+        <div class="background-brightness"></div>
+        <div id="background-blur" class="background-filter">
+          <div class="container">
+            <div>
+              <h1 class="section-text__title-bigger--white" id="first-title">
+                서울 33℃,
+                <span class="inline-block"> 저녁까지 지속되는 폭염. </span>
+                <span class="inline-block">
+                  여름철 잠들기가 이렇게 어려웠나요?
+                </span>
+              </h1>
+            </div>
+            <div>
+              <h2 class="section-text__title-bigger--white" id="second-title">
+                하지만 몇 해뒤에는
+                <span class="inline-block"> 5월 ~ 9월까지 </span><br />
+                <span class="inline-block"> 이 찜통더위와 </span>
+                <span class="inline-block"> 함께해야할 수 도 있습니다. </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+  ---------------------
+  관련 기사글 2개 섹션
+-->
+    <section id="section-news">
+      <div class="container smaller">
+        <h2 class="section-text__title-middle">
+          알게모르게 국내의 기후는 <br />
+          비교하기 어려운 수준으로 변하고 있습니다.
+        </h2>
+        <div class="news-item-wrap">
+          <div class="news-item">
+            <img
+              class="news-item__image"
+              src="/images/news-item__images.png"
+              alt=""
+            />
+            <div class="news-item__text-wrap">
+              <h4 class="news-item__title">
+                폭염으로 생명까지 위협받고 있는 한국
+              </h4>
+              <p class="news-item__paragraph">
+                질병관리본부가 조사한 결과, 온열질환자 수는 총 4010명이고 이
+                가운데 사망자는 162명이라고 합니다. (2018. 5. 29 ~ 8. 13) 기존의
+                호우, 태풍으로 인한 피해보다 월등히 높은 상황입니다. 최근
+                10년(2011~2020년) 폭염일 수 또한 10.1일에서 14.0일로 크게
+                증가하면서 온열질환자는 더욱 증가할 수 밖에 없습니다.
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img
+              class="news-item__image"
+              src="/images/news-item__images-1.png"
+              alt=""
+            />
+            <div class="news-item__text-wrap">
+              <h4 class="news-item__title">
+                기후변화와 함께 신종 감염병까지 확산
+              </h4>
+              <p class="news-item__paragraph">
+                ‘살인 진드기’로 인한 진드기 매개 감염병
+                ‘중증열성혈소판감소증후군(SFTS)’ 환자가 증가하고 있습니다. 살인
+                진드기의 치사율은 19%로 위험한 수치입니다. 2013년 부터 꾸준히 80
+                ~ 100명씩 증가하고 있는 상황입니다. 하지만 우리나라의 평균
+                기온이 올라가면서 진드기의 좋은 서식지로 변화되고,
+                감염병매개체는 더욱 증가할 것으로 보여 감염병에 대비가 필요한
+                상황입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+  ---------------------
+  세계 기사글 리스트 섹션 
+-->
+    <section id="section-world-news">
+      <div class="container">
+        <div class="world-news-wrap">
+          <div class="changing-side ani---appear-scale-up">
+            <div class="changing-side__image-wrap">
+              <img
+                src="/images/changing-side__image.jpg"
+                id="changing-side__image"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="world-news-list ani---appear-right">
+            <div class="world-news-item" onmouseenter="mouseOver(this)">
+              <div class="world-news-item__image-wrap">
+                <img
+                  src="/images/changing-side__image.jpg"
+                  class="world-news-item__image"
+                  alt=""
+                />
+              </div>
+              <h4 class="world-news-item__title">
+                해수면 상승으로 사라질 위기에 남태평양의 섬들.
+              </h4>
+            </div>
+            <div class="world-news-item" onmouseenter="mouseOver(this)">
+              <div class="world-news-item__image-wrap">
+                <img
+                  src="/images/changing-side__image-4.jpg"
+                  class="world-news-item__image"
+                  alt=""
+                />
+              </div>
+              <h4 class="world-news-item__title">
+                폭염으로 캘리포니아의 약 39만 헥타르를 재로 만들어버린 ‘딕시
+                화재’.
+              </h4>
+            </div>
+            <div class="world-news-item" onmouseenter="mouseOver(this)">
+              <div class="world-news-item__image-wrap">
+                <img
+                  src="/images/changing-side__image-3.jpg"
+                  class="world-news-item__image"
+                  alt=""
+                />
+              </div>
+              <h4 class="world-news-item__title">
+                브리티시 콜롬비아의 한 마을의 기온 50℃까지 상승하여 폭염 피해
+                속출.
+              </h4>
+            </div>
+            <div class="world-news-item" onmouseenter="mouseOver(this)">
+              <div class="world-news-item__image-wrap">
+                <img
+                  src="/images/changing-side__image-2.jpg"
+                  class="world-news-item__image"
+                  alt=""
+                />
+              </div>
+              <h4 class="world-news-item__title">
+                중국과 유럽의 일부 지역, 몇 달동안 내릴 비가 순식간에.
+              </h4>
+            </div>
+            <div class="world-news-item" onmouseenter="mouseOver(this)">
+              <div class="world-news-item__image-wrap">
+                <img
+                  src="/images/changing-side__image-1.jpg"
+                  class="world-news-item__image"
+                  alt=""
+                />
+              </div>
+              <h4 class="world-news-item__title">
+                잦은 허리케인으로 더 이상 지을 이름이 없을 정도로 지쳐버린 미국.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+  ---------------------
+  피해액 섹션 
+-->
+    <section id="section-amount-of-damage">
+      <div class="moving-line">
+        <div class="moving-element">
+          <video
+            class="background-video__background"
+            preload="auto"
+            autoplay="true"
+            loop="loop"
+            muted="muted"
+            volume="0 "
+          >
+            <source src="/images/damage-background__video.mp4" />
+          </video>
+          <div
+            id="section-amount-of-damage-ani-move"
+            class="amount-content-wrap"
+          >
+            <div class="container">
+              <div class="section__text-wrap--center">
+                <h2 class="section-text__title-big--white ani---appear-down">
+                  2021년 기후재난 피해액 <br />
+                  상위 10건 합계 총 1703억 달러(약 202조원)
+                </h2>
+                <span class="section-text__subtext--white ani---appear-down">
+                  &#60; 기후 붕괴의 해 2021년 : 비용계산 보고서 &#62;
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background-gradient-filter"></div>
+      </div>
+    </section>
+
+    <!-- 
+  ---------------------
+  과학자 그래프 섹션
+-->
+    <section id="section-scientist">
+      <div class="container">
+        <h2 class="section-text__title-big--white ani__title1">
+          하지만 세계의 과학자들은 <br />
+          점점 더 ‘최악의 재앙’을 이야기하고 있습니다.
+        </h2>
+        <div class="container more-smaller">
+          <div class="graph-wrapper">
+            <div class="graph-wrap">
+              <img src="/images/graph-image.svg" alt="" />
+            </div>
+          </div>
+          <div class="paper-offer ani---appear-right">
+            <div class="paper-offer__text-wrap">
+              <span> 자료제공 </span>
+              <img src="/images/nature-logo 1.svg" alt="" />
+            </div>
+            <span class="paper-offer__sub-text">
+              (COP26 시작과 함께 세계적인 과학저널)
+            </span>
+          </div>
+
+          <div class="simple-btn-wrap">
+            <h2 class="section-text__title-big--white ani__title2">
+              이러한 기후 위기는 인권침해로 이어집니다.
+            </h2>
+            <div class="btn-wrap--center">
+              <a href="#section-human-rights" class="sub-btn--white">
+                기후위기로 인권침해라니, 무슨말인가요?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+  ---------------------
+  인권 침해 섹션 
+-->
+    <section id="section-human-rights">
+      <div class="container">
+        <div class="explanation-wrap">
+          <h3 class="explanation__title--white">
+            기후위기로 발생하는 인권침해
+          </h3>
+          <div class="explanation__detail-wrap">
+            <h6 class="explanation__detail-title--white ani---appear-left">
+              기후위기로 인한 인권 침해란?
+            </h6>
+            <p class="explanation__detail-paragraph--white ani---appear-left">
+              점차 지구의 온도가 올라가고 여러가지 기후변화로 인해 우리가 그동안
+              당연하게 가지고 있던 인권들이 존중받기 어려워지는 것을 말합니다.
+              예를 들어 평균 온도 상승으로 인한 여름철 폭염이 증가해 외출시간이
+              제한되는 것이 있습니다.
+            </p>
+          </div>
+        </div>
+
+        <div id="temperature1-2-3-4">
+          <h2 class="section-text__title-big--white">
+            이러한 상황이 계속된다면,<br />
+            지구는 점점 더 살기 어려워집니다.
+          </h2>
+          <p class="section-text__subtext--white text-center">
+            (아래의 상승하게 될 지구의 온도를 클릭해보세요.)
+          </p>
+          <div class="temperature-card-wrap">
+            <div class="temperature-card-set ani__card1">
+              <div class="click-induction__wrap">
+                <img
+                  class="click-induction__arrow"
+                  src="/images/click-temperature2.svg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="temperature-card__number-btn"
+                onclick="temperatureAppear(this)"
+              >
+                <span class="temperature-card__number--text"> 1 </span>
+                <span class="temperature-card__number--degree"> ℃ </span>
+              </button>
+              <div class="temperature-card">
+                <img
+                  class="temperature-card__image"
+                  src="/images/temperature-images-3.png"
+                  alt=""
+                />
+                <h5 class="temperature-card__title">
+                  지구의 온도가 1°C 오르면?
+                </h5>
+                <div class="temperature-card__list">
+                  <ul>
+                    <li>지속되는 가뭄</li>
+                    <li>물 부족 인구 5천만 명</li>
+                    <li>10% 육상생물 멸종 위기</li>
+                    <li>기후변화로 인한 사망 30만 명</li>
+                  </ul>
+                </div>
+                <p class="temperature-card__paragraph">
+                  가뭄이 곳곳에서 지속되고, 킬리만자로의 만년빙이 사라집니다.
+                  농부들도 농토와 거주지를 잃고, 변화에 적응하지 못한 희귀
+                  동식물이 멸종하게 됩니다.
+                </p>
+              </div>
+            </div>
+            <div class="temperature-card-set ani__card2">
+              <div class="click-induction__wrap">
+                <img
+                  class="click-induction__arrow"
+                  src="/images/click-temperature2.svg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="temperature-card__number-btn"
+                onclick="temperatureAppear(this)"
+              >
+                <span class="temperature-card__number--text"> 2 </span>
+                <span class="temperature-card__number--degree"> ℃ </span>
+              </button>
+              <div class="temperature-card">
+                <img
+                  class="temperature-card__image"
+                  src="/images/temperature-images-2.png"
+                  alt=""
+                />
+                <h5 class="temperature-card__title">
+                  지구의 온도가 2°C 오르면?
+                </h5>
+                <div class="temperature-card__list">
+                  <ul>
+                    <li>사용 가능한 물 20~30% 감소</li>
+                    <li>해빙으로 해수면 7m 상승</li>
+                    <li>15~40% 북극생물 멸종 위기</li>
+                    <li>말라리아 노출 4천만~6천만 명</li>
+                  </ul>
+                </div>
+                <p class="temperature-card__paragraph">
+                  이산화탄소가 바다에 흡수되어 바다생물이 죽어가게 됩니다.
+                  그린란드 빙하도 녹아 해수면이 상승하고, 바다에 면한 도시들이
+                  가라앉게 됩니다.
+                </p>
+              </div>
+            </div>
+            <div class="temperature-card-set ani__card3">
+              <div class="click-induction__wrap">
+                <img
+                  class="click-induction__arrow"
+                  src="/images/click-temperature2.svg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="temperature-card__number-btn"
+                onclick="temperatureAppear(this)"
+              >
+                <span class="temperature-card__number--text"> 3 </span>
+                <span class="temperature-card__number--degree"> ℃ </span>
+              </button>
+              <div class="temperature-card">
+                <img
+                  class="temperature-card__image"
+                  src="/images/temperature-images-1.png"
+                  alt=""
+                />
+                <h5 class="temperature-card__title">
+                  지구의 온도가 3°C 오르면?
+                </h5>
+                <div class="temperature-card__list">
+                  <ul>
+                    <li>기근으로 인한 사망 1~3백만 명</li>
+                    <li>해안침수 피해 연 1억 6천만 명</li>
+                    <li>20~50% 생물 멸종 위기</li>
+                    <li>아마존 열대우림 파괴</li>
+                  </ul>
+                </div>
+                <p class="temperature-card__paragraph">
+                  온난화가 가속화됩니다. 아마존 열대우림이 파괴되고, 대지가 불에
+                  탑니다. 허리케인으로 식량 생산도 어려워지고, 많은 사람이
+                  기근으로 사망하게 됩니다.
+                </p>
+              </div>
+            </div>
+            <div class="temperature-card-set ani__card4">
+              <div class="click-induction__wrap">
+                <img
+                  class="click-induction__arrow"
+                  src="/images/click-temperature2.svg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="temperature-card__number-btn"
+                onclick="temperatureAppear(this)"
+              >
+                <span class="temperature-card__number--text"> 4 </span>
+                <span class="temperature-card__number--degree"> ℃ </span>
+              </button>
+              <div class="temperature-card">
+                <img
+                  class="temperature-card__image"
+                  src="/images/temperature-images.png"
+                  alt=""
+                />
+                <h5 class="temperature-card__title">
+                  지구의 온도가 4°C 오르면?
+                </h5>
+                <div class="temperature-card__list">
+                  <ul>
+                    <li>사용 가능한 물 30~50% 감소</li>
+                    <li>해안 침수 피해 연 3억 명</li>
+                    <li>아프리카 농산물 15~35% 감소</li>
+                    <li>서남극 빙상 붕괴 위험</li>
+                  </ul>
+                </div>
+                <p class="temperature-card__paragraph">
+                  남극의 빙하가 붕괴되고, 지중해는 살인적인 폭염과 가뭄을
+                  겪습니다. 러시아와 동유럽에는 더 이상 눈이 내리지 않게 됩니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+  ---------------------
+  5도 섹션 
+-->
+    <div id="trigger-lock">
+      <section id="section-temperature-5">
+        <div class="container">
+          <div class="section__text-wrap--center">
+            <div class="click-induction__wrap click-induction__wrap--section">
+              <img
+                class="click-induction__arrow"
+                src="/images/click-temperature2.svg"
+                alt=""
+              />
+            </div>
+            <button
+              class="temperature-card__number-btn temperature-card__number-section-btn"
+              onclick="temperatureAppearSection(this)"
+            >
+              <span class="temperature-card__number--text"> 5 </span>
+              <span class="temperature-card__number--degree"> ℃ </span>
+            </button>
+            <div class="temperature-section-content">
+              <h2 class="section-text__title-big--white">
+                지구의 온도가 5°C 오르면?
+              </h2>
+              <div class="temperature-card__list">
+                <ul>
+                  <li>군소도서국과 뉴욕, 런던 등 침수 위험</li>
+                  <li>재난으로 인한 자본시장 붕괴</li>
+                  <li>중국·인도 영향권 히말라야 빙하 소멸</li>
+                  <li>핵무기가 동원된 전쟁 발발</li>
+                </ul>
+              </div>
+              <p class="section-text__subtext-big--white">
+                잦은 재난으로 자본시장이 붕괴되고, 거주 가능 지역
+                (캐나다·러시아)으로 피난민이 몰려 갈등이 발생합니다. 핵무기가
+                동원된 전쟁이 일어나게 됩니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+  ---------------------
+  6도 섹션
+-->
+      <div id="trigger-lock2">
+        <section id="section-temperature-6">
+          <div class="container">
+            <div class="section__text-wrap--center">
+              <div
+                class="click-induction__wrap click-induction__wrap--section click-induction__wrap--margin-bottom"
+              >
+                <img
+                  class="click-induction__arrow"
+                  src="/images/click-temperature2.svg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="temperature-card__number-btn temperature-card__number-section-btn"
+                onclick="temperatureAppearSection2(this)"
+              >
+                <span class="temperature-card__number--text"> 6 </span>
+                <span class="temperature-card__number--degree"> ℃ </span>
+              </button>
+              <div class="temperature-section-content">
+                <h2 class="section-text__title-big--white">
+                  지구의 온도가 6°C 오르면?
+                </h2>
+                <p class="section-text__subtext-big--white">
+                  메탄하이드레이트가 대량 분출되면서 모든 생물체의 대멸종이
+                  시작됩니다. <br />
+                  *메탄하이드레이트란? 저온 고압 상태에서 물과 결합해 형성된
+                  고체 에너지원, 모양이 드라이아이스와 비슷하며 불을 붙이면 타는
+                  성질을 가지고 있어 불타는 얼음(Burning Ice)이라고도 불립니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+  ---------------------
+  도움요청 섹션
+-->
+        <div id="trigger-lock3">
+          <section id="section-help-me">
+            <div class="container">
+              <div class="blur-text__text-wrap">
+                <h2
+                  id="blur-text1"
+                  class="section-text__title-big--white blur-text"
+                >
+                  기후위기를 정부 혼자 해결하기에는 <br />
+                  부족합니다.
+                </h2>
+                <h2
+                  id="blur-text2"
+                  class="section-text__title-big--white blur-text"
+                >
+                  우리 모두의 힘이 필요합니다.
+                </h2>
+              </div>
+              <div class="hand-wrap">
+                <img
+                  class="hand-wrap__left-hand"
+                  src="/images/help__left-hand.png"
+                  alt=""
+                />
+                <img
+                  class="hand-wrap__right-hand"
+                  src="/images/help__right-hand.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 
+---------------------
+가치 안내
+-->
+          <section id="section-gangdong-value">
+            <div class="container">
+              <h2 class="section-text__title-big">
+                <span class="brand__title">GREEN</span> 이 앞장서겠습니다.
+              </h2>
+              <div class="plan-wrap">
+                <div class="plan-item ani__item1">
+                  <img
+                    class="gangdong-value__leaf1"
+                    src="/images/gangdong-value__leaf-image.png"
+                    alt=""
+                  />
+                  <div class="plan-item__text-wrap">
+                    <div class="plan-item__title-wrap">
+                      <div class="plan-item__num-wrap">
+                        <h3 class="plan-item__num">01</h3>
+                        <div class="plan-item__num-deco">
+                          <img src="/images/plan-item__deco.svg" alt="" />
+                        </div>
+                      </div>
+                      <h3 class="plan-item__title">환경교육 기반강화</h3>
+                    </div>
+                    <div class="plan-item__list-wrap">
+                      <ul>
+                        <li>찾아가는 꿈나무 환경교육 운영</li>
+                        <li>나만의 환경실천 달력 만들기 운영</li>
+                        <li>지역 환경단체 네트워크 활성화</li>
+                        <li>그린리더 역량 강화 교육</li>
+                        <li>
+                          2050탄소중립 시민실천을 위한 환경 활동가 역량강화 교육
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="plan-item__image-wrap">
+                    <img
+                      class="plan-item__image"
+                      src="/images/plan-item__images.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="plan-item ani__item2">
+                  <img
+                    class="gangdong-value__leaf2"
+                    src="/images/gangdong-value__leaf-image.png"
+                    alt=""
+                  />
+                  <div class="plan-item__text-wrap">
+                    <div class="plan-item__title-wrap">
+                      <div class="plan-item__num-wrap">
+                        <h3 class="plan-item__num">02</h3>
+                        <div class="plan-item__num-deco">
+                          <img src="/images/plan-item__deco.svg" alt="" />
+                        </div>
+                      </div>
+                      <h3 class="plan-item__title">지역과 함께하는 환경교육</h3>
+                    </div>
+                    <div class="plan-item__list-wrap">
+                      <ul>
+                        <li>친환경 유용 미생물(EM) 보급 및 홍보활동</li>
+                        <li>2050 탄소중립 시민실천단 운영</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="plan-item__image-wrap">
+                    <img
+                      class="plan-item__image"
+                      src="/images/plan-item__images-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="plan-item ani__item3">
+                  <img
+                    class="gangdong-value__leaf3"
+                    src="/images/gangdong-value__leaf-image.png"
+                    alt=""
+                  />
+                  <div class="plan-item__text-wrap">
+                    <div class="plan-item__title-wrap">
+                      <div class="plan-item__num-wrap">
+                        <h3 class="plan-item__num">03</h3>
+                        <div class="plan-item__num-deco">
+                          <img src="/images/plan-item__deco.svg" alt="" />
+                        </div>
+                      </div>
+                      <h3 class="plan-item__title">학교 환경교육 강화</h3>
+                    </div>
+                    <div class="plan-item__list-wrap">
+                      <ul>
+                        <li>스마트 환경교육 인프라 구축 및 프로그램 운영</li>
+                        <li>EM활용법 및 실습교육 운영</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="plan-item__image-wrap">
+                    <img
+                      class="plan-item__image"
+                      src="/images/plan-item__images-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="plan-item ani__item4">
+                  <img
+                    class="gangdong-value__leaf4"
+                    src="/images/gangdong-value__leaf-image.png"
+                    alt=""
+                  />
+                  <div class="plan-item__text-wrap">
+                    <div class="plan-item__title-wrap">
+                      <div class="plan-item__num-wrap">
+                        <h3 class="plan-item__num">04</h3>
+                        <div class="plan-item__num-deco">
+                          <img src="/images/plan-item__deco.svg" alt="" />
+                        </div>
+                      </div>
+                      <h3 class="plan-item__title">사회 환경교육 활성화</h3>
+                    </div>
+                    <div class="plan-item__list-wrap">
+                      <ul>
+                        <li>환경의 날 기념 환경작품 공모전 개최</li>
+                        <li>탄소중립 녹색생활 실천관 운영</li>
+                        <li>고덕천에 EM흙공 던지기 행사 추진</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="plan-item__image-wrap">
+                    <img
+                      class="plan-item__image"
+                      src="/images/plan-item__images-3.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 
+---------------------
+시청 유도 섹션
+-->
+          <section id="section-induce">
+            <div class="container">
+              <h2 class="section-text__title-big--white">
+                환경보호의 첫걸음, <br />
+                알아야 시작할 수 있습니다.
+              </h2>
+              <div class="btn-wrap--center">
+                <a class="cta-btn--point-ani" href="/index.html">
+                  첫걸음 시작 하러가기
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- 
+---------------------
+푸터 
+-->
+          <footer>
+            <div class="container">
+              <div class="footer__logo">
+                <img
+                  class="footer__logo--black"
+                  src="/images/green-logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="footer__list-wrap">
+                <ul>
+                  <li>장소 : 최수현 github<br /></li>
+                  <li>TEL : 010-1111-1111 <br /></li>
+                  <li>FAX : 010-1111-1111</li>
+                </ul>
+                <span class="footer__copyright">
+                  COPYRIGHT 2019 BY CHOI SU HYUN. SOME RIGHTS RESERVED.
+                </span>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <script src="/graph.js"></script>
+    <script src="/main-scroll.js"></script>
+    <script src="/nav-sticky.js"></script>
+    <script src="/world-news.js"></script>
+    <!-- <script>
+    const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+  </script> -->
+  </body>
+</html>
